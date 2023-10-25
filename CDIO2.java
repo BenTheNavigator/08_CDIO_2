@@ -1,4 +1,8 @@
-class Account{
+class Player{
+    private String name;
+    
+
+}class Account{
     private int balance;
 
     public Account(){
