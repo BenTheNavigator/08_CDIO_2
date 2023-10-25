@@ -5,12 +5,13 @@ class Game{
         System.out.println("Player 1 enter your name:");
         var player1name = scanner.nextLine();
         var Player1 = new Player(player1name);
+        System.out.println(Player1.getName() + ":" + Player1.getAccount().getBalance());
 
         System.out.println("Player 2 enter your name:");
         var player2name = scanner.nextLine();
         var Player2 = new Player(player2name);
-
-        System.out.println(Player1 + " " + Player2);
+        System.out.println(Player2.getName() + ":" + Player2.getAccount().getBalance());
+        
     }        
 
 
