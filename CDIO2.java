@@ -60,40 +60,29 @@ class Gameboard {
     public int boardNumber;
     public int boardEffect;
     public String boardText;
+    public int extraTurn;
 
-    public GameboardPoint(int boardNumber, int boardEffect, String boardText) {
+    public GameboardPoint(int boardNumber, int boardEffect, String boardText, int extraTurn) {
         this.boardNumber = boardNumber;
         this.boardEffect = boardEffect;
         this.boardText = boardText;
+        this.extraTurn = extraTurn;
     }
 
     public static final GameboardPoint[] POINTS = {
-        new GameboardPoint(2, 250, "You have discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks."),
-        new GameboardPoint(3, -100, "OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg..."),
-        new GameboardPoint(4, 100, "On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it!"),
+        new GameboardPoint(2, 250, "You've discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks.", 0),
+        new GameboardPoint(3, -100, "OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg...", 0),
+        new GameboardPoint(4, 100, "On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it!", 0),
+        new GameboardPoint(5, -20, "You've discovered the Cold Desert! It's a harsh environment, and you lose 20 bucks.", 0),
+        new GameboardPoint(6, 180, "You've reached the Walled City and received a warm welcome. Gain 180 bucks.", 0),
+        new GameboardPoint(7, 0, "You've entered the Monastery, where you find peace and tranquility. No change in your fortune.", 0),
+        new GameboardPoint(8, -70, "You've entered the Black Cave, and drop some money while lost in the dark. Lose 70 bucks.", 0),
+        new GameboardPoint(9, 60, "You've found huts in the mountain. The locals are generous and give you 60 bucks.", 0),
+        new GameboardPoint(10, -80, "You've encountered the Werewall (werewolf-wall). It's a scary place, and you lose 80 bucks. However, you get an extra turn!", 1),
+        new GameboardPoint(11, -50, "You've fallen into the pit. Lose 50 bucks.", 0),
+        new GameboardPoint(12, 650, "You've discovered the Goldmine! Strike it rich and gain 650 bucks.", 0)
+    
     };
 
-    public Tower(){
-        this.boardNumber = 2;
-        this.boardEffect = 250;
-        this.boardText = "You have discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks";
-    }
-
-    public Crater(){
-        this.boardNumber = 3;
-        this.boardEffect = -100;
-        this.boardText = "OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg...";
-    }
-
-    public PalaceGates(){
-        this.boardNumber = 4;
-        this.boardEffect = 100;
-        this.boardText = "On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it! ";
-    }
-
-    public ColdDesert(){
-        this.boardNumber = 5;
-        this.boardEffect = -20;
-        this.boardText = "You have discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks";
-    }
+    
 }
