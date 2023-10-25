@@ -13,6 +13,12 @@ class Account{
         balance+=Amount;
     }
 
-    public decreaseAmount(int Amount){
+    public void decreaseAmount(int Amount){
+        if(balance-Amount<0){
+            balance=0;
+        } else {
+            balance-=Amount;
+        }
+
     }
 }
