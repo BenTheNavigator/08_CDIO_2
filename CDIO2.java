@@ -61,6 +61,18 @@ class Gameboard {
     public int boardEffect;
     public String boardText;
 
+    public GameboardPoint(int boardNumber, int boardEffect, String boardText) {
+        this.boardNumber = boardNumber;
+        this.boardEffect = boardEffect;
+        this.boardText = boardText;
+    }
+
+    public static final GameboardPoint[] POINTS = {
+        new GameboardPoint(2, 250, "You have discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks."),
+        new GameboardPoint(3, -100, "OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg..."),
+        new GameboardPoint(4, 100, "On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it!"),
+    };
+
     public Tower(){
         this.boardNumber = 2;
         this.boardEffect = 250;
