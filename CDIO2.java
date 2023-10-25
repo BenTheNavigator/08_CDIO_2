@@ -14,7 +14,9 @@ class Game{
         var Player2 = new Player(player2name);
         System.out.println("Welcome " + Player2.getName() + ": " + Player2.getAccount().getBalance());
     
-
+        while (Player1.getAccount().getBalance()<=3000 && Player2.getAccount().getBalance()<=3000){
+            
+        }
     }        
 
 
