@@ -44,7 +44,7 @@ class Dice {
         this.maxFaceValue = maxFaceValue;
     }
 
-    public int Roll(){
+    public int getRoll(){
         //We get a random double value (0 to 1) from the Math.random
         var randomValue = Math.random();
         //Here we convert the double value from the Math.random to an integer
@@ -54,4 +54,12 @@ class Dice {
         } 
         return result;
     }
+}
+
+class Gameboard {
+    public int boardNumber;
+    public int boardEffect;
+    public String boardText;
+
+    public 
 }
