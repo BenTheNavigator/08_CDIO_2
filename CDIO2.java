@@ -36,10 +36,15 @@ class Account {
 }
 
 class Dice {
+    public int numberOfDice;
+    public int maxFaceValue;
 
+    public 6SideDice(int numberOfDice, int maxFaceValue){
+        this.numberOfDice = numberOfDice;
+        this.maxFaceValue = maxFaceValue;
+    }
 
-
-    static int dice(){
+    static int Roll(int numberOfDice, int maxFaceValue){
         //We get a random double value (0 to 1) from the Math.random
         var randomValue = Math.random();
         //Here we convert the double value from the Math.random to an integer
