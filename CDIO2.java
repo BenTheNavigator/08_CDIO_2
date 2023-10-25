@@ -44,12 +44,12 @@ class Dice {
         this.maxFaceValue = maxFaceValue;
     }
 
-    public int Roll(int numberOfDice, int maxFaceValue){
+    public int Roll(){
         //We get a random double value (0 to 1) from the Math.random
         var randomValue = Math.random();
         //Here we convert the double value from the Math.random to an integer
         //and we also have to use Math.floor to round down 
-        for(int result = 0; numberOfDice > 0; numberOfDice--) {
+        for(int result = 0; this.numberOfDice > 0; this.numberOfDice--) {
             result = (int) Math.floor(randomValue*this.maxFaceValue)+1 + result; 
         } 
         return result;
