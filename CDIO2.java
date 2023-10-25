@@ -2,7 +2,8 @@ class Player{
     private String name;
     
 
-}class Account{
+}
+class Account{
     private int balance;
 
     public Account(){
