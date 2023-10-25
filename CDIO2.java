@@ -3,10 +3,12 @@ class Game{
         var scanner = new java.util.Scanner(System.in);
 
         System.out.println("Player 1 enter your name:");
-        var Player1 = new Player(scanner.nextLine());
+        var player1name = scanner.nextLine();
+        var Player1 = new Player(player1name);
 
         System.out.println("Player 2 enter your name:");
-        var Player2 = new Player(scanner.nextline());
+        var player2name = scanner.nextLine();
+        var Player2 = new Player(player2name);
 
         System.out.println(Player1 + " " + Player2);
     }        
