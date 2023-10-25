@@ -47,12 +47,10 @@ class Dice {
     Dice sixSidedDice = new Dice(2, 6);
 
     public int getRoll(){
-        //We get a random double value (0 to 1) from the Math.random
-        var randomValue = Math.random();
-        //Here we convert the double value from the Math.random to an integer
-        //and we also have to use Math.floor to round down 
-        for(int result = 0; this.numberOfDice > 0; this.numberOfDice--) {
-            result = (int) Math.floor(randomValue*this.maxFaceValue)+1 + result; 
+        int result = 0;
+        
+        for(int i = 0; i < this.numberOfDice; i++) {
+            result = (int) Math.floor(Math.random()*this.maxFaceValue)+1 + result; 
         } 
         return result;
     }
