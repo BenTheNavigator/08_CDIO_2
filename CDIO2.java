@@ -39,7 +39,7 @@ class Dice {
     public int numberOfDice;
     public int maxFaceValue;
 
-    public DiceNumberFV(int numberOfDice, int maxFaceValue){
+    public Dice(int numberOfDice, int maxFaceValue){
         this.numberOfDice = numberOfDice;
         this.maxFaceValue = maxFaceValue;
     }
@@ -56,7 +56,7 @@ class Dice {
     }
 }
 
-class Gameboard {
+class GameboardPoint {
     public int boardNumber;
     public int boardEffect;
     public String boardText;
@@ -81,7 +81,6 @@ class Gameboard {
         new GameboardPoint(10, -80, "You've encountered the Werewall (werewolf-wall). It's a scary place, and you lose 80 bucks. However, you get an extra turn!", 1),
         new GameboardPoint(11, -50, "You've fallen into the pit. Lose 50 bucks.", 0),
         new GameboardPoint(12, 650, "You've discovered the Goldmine! Strike it rich and gain 650 bucks.", 0)
-    
     };
 
     
