@@ -16,5 +16,24 @@ class Player {
 }
 
 class Account {
-    
+    public static boolean checkPBalance(){
+        if (player.accountBalance < 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static int setBalance0(boolean checkPBalance){
+        if (true){
+            return 0;
+        } else {
+            return player.accountBalance;
+        }
+
+
+    }
+
+
+
 }
