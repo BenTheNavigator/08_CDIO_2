@@ -1,4 +1,6 @@
-class Player{
+class Game{
+    
+}class Player{
     private String name;
     private Account account;
 
