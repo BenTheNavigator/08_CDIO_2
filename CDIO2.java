@@ -44,6 +44,8 @@ class Dice {
         this.maxFaceValue = maxFaceValue;
     }
 
+    Dice sixSidedDice = new Dice(2, 6);
+
     public int getRoll(){
         //We get a random double value (0 to 1) from the Math.random
         var randomValue = Math.random();
