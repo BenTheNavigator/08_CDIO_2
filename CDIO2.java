@@ -78,4 +78,10 @@ class Gameboard {
         this.boardEffect = 100;
         this.boardText = "On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it! ";
     }
+
+    public ColdDesert(){
+        this.boardNumber = 5;
+        this.boardEffect = -20;
+        this.boardText = "You have discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks";
+    }
 }
