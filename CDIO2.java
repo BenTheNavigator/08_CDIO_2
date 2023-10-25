@@ -1,6 +1,11 @@
 class Player{
     private String name;
-    
+    private Account account;
+
+    public Player(String name){
+        this.name=name;
+        this.account= new Account();
+    }
 
 }
 class Account{
