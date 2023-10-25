@@ -1,6 +1,14 @@
 class Game{
     public static void main (String[] args){
-        
+        var scanner = new java.util.Scanner(System.in);
+
+        System.out.println("Player 1 enter your name:");
+        var Player1 = new Player(scanner.nextLine());
+
+        System.out.println("Player 2 enter your name:");
+        var Player2 = new Player(scanner.nextline());
+
+        System.out.println(Player1 + " " + Player2);
     }        
 
 
