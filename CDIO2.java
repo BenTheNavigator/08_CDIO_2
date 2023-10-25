@@ -1,4 +1,4 @@
-class Dice{
+class Diceroll{
     public static int dice(){
         //We get a random double value (0 to 1) from the Math.random
         var randomValue = Math.random();
