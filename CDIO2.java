@@ -39,7 +39,7 @@ class Dice {
     public int numberOfDice;
     public int maxFaceValue;
 
-    public SixSideDice(int numberOfDice, int maxFaceValue){
+    public DiceNumberFV(int numberOfDice, int maxFaceValue){
         this.numberOfDice = numberOfDice;
         this.maxFaceValue = maxFaceValue;
     }
@@ -61,5 +61,21 @@ class Gameboard {
     public int boardEffect;
     public String boardText;
 
-    public 
+    public Tower(){
+        this.boardNumber = 2;
+        this.boardEffect = 250;
+        this.boardText = "You have discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks";
+    }
+
+    public Crater(){
+        this.boardNumber = 3;
+        this.boardEffect = -100;
+        this.boardText = "OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg...";
+    }
+
+    public PalaceGates(){
+        this.boardNumber = 4;
+        this.boardEffect = 100;
+        this.boardText = "On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it! ";
+    }
 }
