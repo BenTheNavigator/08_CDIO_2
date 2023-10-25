@@ -24,16 +24,13 @@ class Account {
         }
     }
 
-    public static int setBalance0(boolean checkPBalance){
-        if (true){
-            return 0;
-        } else {
-            return player.accountBalance;
-        }
-
-
+    public static void setBalance(int boardEffect){
+        player.accountBalance = player.accountBalance + boardEffect;
     }
 
+    public static void setBalance0(int ID){
+        player.accountBalance = 0;
+    }
 
 
 }
