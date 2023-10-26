@@ -36,42 +36,52 @@ class Game{
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 3:
+                            System.out.println("OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg...");
                             Player1.getAccount().decreaseAmount(100);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 4:
+                            System.out.println("On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it!");
                             Player1.getAccount().addAmount(100);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 5:
+                            System.out.println("You've discovered the Cold Desert! It's a harsh environment, and you lose 20 bucks.");
                             Player1.getAccount().decreaseAmount(20);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 6:
+                            System.out.println("You've reached the Walled City and received a warm welcome. Gain 180 bucks.");
                             Player1.getAccount().addAmount(180);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 7:
+                            System.out.println("You've entered the Monastery, where you find peace and tranquility. No change in your fortune.");
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 8:
+                            System.out.println("You've entered the Black Cave, and drop some money while lost in the dark. Lose 70 bucks.");
                             Player1.getAccount().decreaseAmount(70);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 9:
+                            System.out.println("You've found huts in the mountain. The locals are generous and give you 60 bucks.");
                             Player1.getAccount().addAmount(60);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 10:
+                            System.out.println("You've encountered the Werewall (werewolf-wall). It's a scary place, and you lose 80 bucks. However, you get an extra turn!");
                             Player1.getAccount().decreaseAmount(80);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             player1turn=false;
                             break;
                         case 11:
+                            System.out.println("You've fallen into the pit. Lose 50 bucks.");
                             Player1.getAccount().decreaseAmount(50);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
                         case 12:
+                            System.out.println("You've discovered the Goldmine! Strike it rich and gain 650 bucks.");
                             Player1.getAccount().addAmount(650);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
@@ -102,42 +112,52 @@ class Game{
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 3:
+                            System.out.println("OH NO!!! You fell into a huge crater! Spend 100 bucks for a health potion to heal your broken leg...");
                             Player2.getAccount().decreaseAmount(100);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 4:
+                            System.out.println("On your way through the palace gates you found a gold coin worth 100 bucks. Quick hide it before the corrupt guards see it!");
                             Player2.getAccount().addAmount(100);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 5:
+                            System.out.println("You've discovered the Cold Desert! It's a harsh environment, and you lose 20 bucks.");
                             Player2.getAccount().decreaseAmount(20);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 6:
+                            System.out.println("You've reached the Walled City and received a warm welcome. Gain 180 bucks.");
                             Player2.getAccount().addAmount(180);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 7:
+                            System.out.println("You've entered the Monastery, where you find peace and tranquility. No change in your fortune.");
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 8:
+                            System.out.println("You've entered the Black Cave, and drop some money while lost in the dark. Lose 70 bucks.");
                             Player2.getAccount().decreaseAmount(70);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 9:
+                            System.out.println("You've found huts in the mountain. The locals are generous and give you 60 bucks.");
                             Player2.getAccount().addAmount(60);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 10:
+                            System.out.println("You've encountered the Werewall (werewolf-wall). It's a scary place, and you lose 80 bucks. However, you get an extra turn!");
                             Player2.getAccount().decreaseAmount(80);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             player1turn=true;
                             break;
                         case 11:
+                            System.out.println("You've fallen into the pit. Lose 50 bucks.");
                             Player2.getAccount().decreaseAmount(50);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
                         case 12:
+                            System.out.println("You've discovered the Goldmine! Strike it rich and gain 650 bucks.");
                             Player2.getAccount().addAmount(650);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
