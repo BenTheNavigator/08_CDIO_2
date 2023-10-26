@@ -18,6 +18,41 @@ class Game{
 
         while (Player1.getAccount().getBalance()<3000 && Player2.getAccount().getBalance()<3000){
             if (player1turn){
+                int roll1 = Diceroll.dice();
+                int roll2 = Diceroll.dice();
+                int rollsum = roll1+roll2;
+
+                switch (rollsum){
+                    case 2:
+                        Player1.getAccount().addAmount(250);
+                        break;
+                    case 3:
+
+                    case 4:
+                        Player1.getAccount().addAmount(100);
+                        break;
+                    case 5:
+                    
+                    case 6:
+                        Player1.getAccount().addAmount(180);
+                        break;
+                    case 7:
+                        break;
+                    case 8:
+
+                    case 9:
+                        Player1.getAccount().addAmount(60);
+                        break;
+                    case 10:
+
+                    case 11:
+
+                    case 12:
+                        Player1.getAccount().addAmount(650);
+                        break;
+
+                    
+                }
 
                 if (Player1.getAccount().getBalance()>=3000){
                     Game.winMessage(player1name);
