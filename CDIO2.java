@@ -1,6 +1,27 @@
 class Game {
+    public static void main (String args[]){
+        System.out.println("Hello players, and welcome to a game you will never forget. Continue game description here.");
+
+        //made scanner
+        var scanner = new java.util.Scanner(System.in);
+
+        var playerInGame = new Player[] {
+            new Player(scanner.nextLine()),
+            new Player(scanner.nextLine()),
+        };
+
+        System.out.println("\n"+"What is player 1's name?");
+        new Player(scanner.nextLine());
+        System.out.println("Welcome to the Age of Discovery " + player1name + "!" + "\n");
+
+        System.out.println("What is player 2's name?");
+        var player2name = scanner.nextLine();
+        System.out.println("May the RAFFLEMANIA be with you " + player2name + "!" + "\n");
 
 
+
+
+    }
 }
 
 class Player {
