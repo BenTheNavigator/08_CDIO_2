@@ -60,6 +60,7 @@ class Game{
                         case 10:
                             Player1.getAccount().decreaseAmount(80);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
+                            player1turn=false;
                             break;
                         case 11:
                             Player1.getAccount().decreaseAmount(50);
@@ -122,6 +123,7 @@ class Game{
                         case 10:
                             Player2.getAccount().decreaseAmount(80);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
+                            player1turn=true;
                             break;
                         case 11:
                             Player2.getAccount().decreaseAmount(50);
