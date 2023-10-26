@@ -17,7 +17,11 @@ class Game{
         while (Player1.getAccount().getBalance()<=3000 && Player2.getAccount().getBalance()<=3000){
             
         }
-    }        
+    }     
+    
+    public void winMessage(String name){
+        System.out.println("Congrats " + name + " you've reached the pinnacle of economic success and WON THE GAME!!!");
+    }
 
 
 
