@@ -31,6 +31,7 @@ class Game{
 
                     switch (rollsum){
                         case 2:
+                            System.out.println("You've discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks.");
                             Player1.getAccount().addAmount(250);
                             System.out.println("New balance of " + player1name + ": " + Player1.getAccount().getBalance());
                             break;
@@ -96,6 +97,7 @@ class Game{
 
                     switch (rollsum){
                         case 2:
+                            System.out.println("You've discovered the Tower of Wisdom! Ancient books discovered worth 250 bucks.");
                             Player2.getAccount().addAmount(250);
                             System.out.println("New balance of " + player2name + ": " + Player2.getAccount().getBalance());
                             break;
