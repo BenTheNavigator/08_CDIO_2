@@ -15,14 +15,16 @@ class Game{
         System.out.println("Welcome " + Player2.getName() + ": " + Player2.getAccount().getBalance());
     
         boolean player1turn=true;
+        int numberOfDice=2;
+        int maxFaceValue=6;
 
         while (Player1.getAccount().getBalance()<3000 && Player2.getAccount().getBalance()<3000){
             if (player1turn){
                 System.out.println(player1name + ", press 'r' to roll the dice.");
                 String input = scanner.nextLine();
                 if (input.equalsIgnoreCase("r")) {
-                    int roll1 = Diceroll.dice();
-                    int roll2 = Diceroll.dice();
+                    int roll1 = Diceroll.dice(numberOfDice-1,maxFaceValue);
+                    int roll2 = Diceroll.dice(numberOfDice-1,maxFaceValue);
                     int rollsum = roll1+roll2;
 
                     System.out.println("You rolled: " + roll1 + " and " + roll2);
@@ -86,8 +88,8 @@ class Game{
                 System.out.println(player2name + ", press 'r' to roll the dice.");
                 String input = scanner.nextLine();
                 if (input.equalsIgnoreCase("r")) {
-                    int roll1 = Diceroll.dice();
-                    int roll2 = Diceroll.dice();
+                    int roll1 = Diceroll.dice(numberOfDice-1,maxFaceValue);
+                    int roll2 = Diceroll.dice(numberOfDice-1,maxFaceValue);
                     int rollsum = roll1+roll2;
 
                     System.out.println("You rolled: " + roll1 + " and " + roll2);
@@ -197,14 +199,13 @@ class Account{
     }
 }
 class Diceroll{
-    private int numberOfDice;
-    private int maxFaceValue;
-    
-    public static int dice(){
-        
-        var randomValue = Math.random();
-        
-        int dice = (int) Math.floor(randomValue*6)+1; 
-        return dice;
+    public static int dice(int numberOfDice, int maxFaceValue){
+        int total=0;
+        for (int i = 0; i < numberOfDice; i++) {
+            var randomValue = Math.random();
+            int dice = (int) Math.floor(randomValue * maxFaceValue) + 1;
+            total += dice;
+        }
+        return total;
     }
 }
