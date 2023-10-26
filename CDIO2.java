@@ -197,7 +197,9 @@ class Account{
     }
 }
 class Diceroll{
-    private
+    private int numberOfDice;
+    private int maxFaceValue;
+    
     public static int dice(){
         
         var randomValue = Math.random();
