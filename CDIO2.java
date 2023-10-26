@@ -171,6 +171,7 @@ class Game{
             }
             player1turn= !player1turn;
         }
+        scanner.close();
     }     
     
     public static void winMessage(String name){
