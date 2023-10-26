@@ -80,7 +80,7 @@ class Game{
 
 
             } else {
-                System.out.println(player1name + ", press 'r' to roll the dice.");
+                System.out.println(player2name + ", press 'r' to roll the dice.");
                 String input = scanner.nextLine();
                 if (input.equalsIgnoreCase("r")) {
                     int roll1 = Diceroll.dice();
@@ -146,12 +146,6 @@ class Game{
     public static void winMessage(String name){
         System.out.println("Congrats " + name + " you've reached the pinnacle of economic success and WON THE GAME!!!");
     }
-
-
-
-
-
-
 
 }
 class Player{
