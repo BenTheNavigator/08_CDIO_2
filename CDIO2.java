@@ -14,16 +14,25 @@ class Game{
         var Player2 = new Player(player2name);
         System.out.println("Welcome " + Player2.getName() + ": " + Player2.getAccount().getBalance());
     
-        while (Player1.getAccount().getBalance()<=3000 && Player2.getAccount().getBalance()<=3000){
+        boolean player1turn=true;
+
+        while (Player1.getAccount().getBalance()<3000 && Player2.getAccount().getBalance()<3000){
+            if (player1turn){
+
+                if (Player1.getAccount().getBalance()>=3000){
+                    Game.winMessage(player1name);
+                    break;
+                }
+
+
+            } else {
+                if (Player2.getAccount().getBalance()>=3000){
+                    Game.winMessage(player2name);
+                    break;
+                }
+
+            }
             
-        }
-
-        if (Player1.getAccount().getBalance()>=3000){
-            Game.winMessage(player1name);
-        }
-
-        if (Player2.getAccount().getBalance()>=3000){
-            Game.winMessage(player2name);
         }
     }     
     
