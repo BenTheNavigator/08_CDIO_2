@@ -110,7 +110,7 @@ class Game{
                 }
 
             }
-            
+            player1turn= !player1turn;
         }
     }     
     
