@@ -90,6 +90,8 @@ class Game{
                     int roll2 = Diceroll.dice();
                     int rollsum = roll1+roll2;
 
+                    System.out.println("You rolled: " + roll1 + " and " + roll2);
+
                     switch (rollsum){
                         case 2:
                             Player2.getAccount().addAmount(250);
